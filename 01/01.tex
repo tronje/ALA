@@ -1,0 +1,101 @@
+\newcommand{\authorinfo}{Jonathan Siems, Lina, Tronje Krabbe}
+\newcommand{\titleinfo}{ALA 01 (HA) zum 10.04.2014}
+\newcommand{\qed}{\square}
+
+\documentclass [a4paper,11pt]{article}
+\usepackage[german,ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\usepackage{breqn}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+
+\author{\authorinfo}
+\title{\titleinfo}
+\date{\today}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\authorinfo}
+\fancyhead[R]{\titleinfo}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\maketitle
+    \begin{enumerate}
+        % Aufgabe 1
+        \item[\textbf{1.}]
+            Wir unterscheiden zwei Fälle: \\
+            Fall $x > -5$:\\
+            \begin{align}
+                \frac{2}{x+5} \geq 3 \\
+                \Leftrightarrow 2 \geq 3x+15 \\
+                \Leftrightarrow x \leq (- \frac{13}{3})
+            \end{align}
+            Fall $x < -5$:\\
+                In diesem Fall ist die gesamte Linke Seite der Ungleichung immer negativ, da der Nenner des Bruches negativ ist. Das bedeutet, dass für x kleiner -5 keine Lösung existiert.
+            % Quatsch:
+            % \begin{align}
+            %     \frac{2}{x+5} \geq 3 \\
+            %     \Leftrightarrow 2 \leq 3x+15 \\
+            %     \Leftrightarrow x \geq (- \frac{13}{3})
+            % \end{align}
+            Daraus folgt: \\ \\
+            $L = (- 5, - \frac{13}{3}]$
+        % Aufgabe 2
+        \item[\textbf{2.}]
+            Wir unterscheiden abermals zwei Fälle: \\
+            Fall $x \geq \frac{4}{3}$: \\
+            \begin{align}
+                |3x-4| \geq 2 \\
+                \Leftrightarrow x \geq 2
+            \end{align}
+            Fall $x < \frac{4}{3}$: \\
+            \begin{align}
+                |3x-4| \geq 2 \\
+                \Leftrightarrow -(3x-4) \geq 2 \\
+                \Leftrightarrow x \leq \frac{2}{3}
+            \end{align}
+            Daraus folgt: \\ \\
+            $L = (- \infty, \frac{2}{3}] \cup (2, \infty)$
+        % Aufgabe 3
+        \item[\textbf{3.}]
+            \begin{enumerate}
+                \item[a)]
+                    \begin{align}
+                        |a_n - a| &=& |\frac{4n-1}{n+5} - 4| \\
+                        &=& |\frac{4n-1}{n+5} - \frac{4(n+5)}{n+5}| \\
+                        &=& |\frac{4n-1}{n+5} - \frac{4n+20}{n+5}| \\
+                        &=& |\frac{-21}{n+5}| \\
+                        &=& - \frac{21}{n+5}
+                    \end{align}
+                \item[b)]
+                    Gesucht ist:
+                    \begin{align}
+                        |a_n - a| < \epsilon \Leftrightarrow - \frac{21}{n+5} < \epsilon \\
+                        \Leftrightarrow n > - \frac{21}{\epsilon} -5
+                    \end{align}
+                    Nun setze man $N > - \frac{21}{\epsilon} -5$. Daraus folgt: \\
+                    für $n \geq N$ gilt $|a_n - a| < \epsilon$. \\
+                    Somit ist gezeigt, dass die Folge $a_n$ gegen $a$ konvergiert.
+                \item[c)]
+                    \begin{align}
+                        & \epsilon = \frac{1}{10} \Rightarrow N = -214 \\
+                        & \epsilon = \frac{1}{100} \Rightarrow N = -2104 \\
+                        & \epsilon = \frac{1}{1000} \Rightarrow N = -21004 \\
+                    \end{align}
+            \end{enumerate}
+        % Aufgabe 4
+        \item[\textbf{4.}]
+
+            
+
+    \end{enumerate}
+
+
+\end{document}
