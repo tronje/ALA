@@ -92,7 +92,44 @@
             \end{enumerate}
         % Aufgabe 4
         \item[\textbf{4.}]
-
+            \textbf{Beschränktheit}\\
+                (1) Behauptung: $1 \leq a_n < 2$ \\
+                (1) gilt für $n=1$: $1 \leq a_1= \frac{5}{3} < 2$ \\
+                Angenommen, (1) gilt für ein beliebiges, fest gewähltes $n$. Dann muss auch gelten:\\
+                \begin{align}
+                    1 \leq a_{n+1} < 2 \\
+                    \Leftrightarrow 1 \leq ( \frac{a_n}{2} )^2 + 1 < 2
+                \end{align}
+                Zeige zuerst, dass gilt: $1 \leq a_{n+1}$
+                \begin{align}
+                    1 \leq ( \frac{a_n}{2} )^2 + 1 \\
+                    \Leftrightarrow 0 \leq ( \frac{a_n}{2} )^2 \\
+                    \Leftrightarrow 0 \leq \frac{a_n}{2} \\
+                    \Leftrightarrow 0 \leq a_n
+                \end{align}
+                Dies entspricht unserer Annahme (1).\\
+                Zeige nun, dass gilt: $a_{n+1} < 2$
+                \begin{align}
+                    ( \frac{a_n}{2} )^2 + 1 < 2 \\
+                    \Leftrightarrow ( \frac{a_n}{2} )^2 < 1 \\
+                    \Leftrightarrow \frac{a_n}{2} < 1 \\
+                    \Leftrightarrow a_n < 2
+                \end{align}
+                Dies fügt sich ebenfalls (1). Somit ist durch vollständige Induktion gezeigt, dass $(a_n)$ beschränkt ist. \\
+                \\
+            \textbf{Monotonie}\\
+                Zu zeigen: $a_{n+1} \geq a_n$ für alle $n \in \mathbb{N}$. (2)\\
+                Wir verwenden abermals vollständige Induktion um diese Aufgabe zu lösen: \\
+                (2) gilt für $n=1$: $\frac{61}{36} \geq \frac{5}{3}$. \\
+                Angenommen, (2) gilt für ein beliebiges, fest gewähltes $n$. Dann muss auch gelten:
+                \begin{align}
+                    a_{n+2} &\geq a_{n+1} \\
+                    \Leftrightarrow ( \frac{a_{n+1}}{2} )^2 + 1 &\geq ( \frac{a_n}{2} )^2 + 1 \\
+                    \Leftrightarrow \frac{a_{n+1}}{2} &\geq \frac{a_n}{2} \\
+                    \Leftrightarrow a_{n+1} &\geq a_n
+                \end{align}
+                Hiermit ist nun auch die Monotonie der Folge bewiesen.
+            
             
 
     \end{enumerate}
