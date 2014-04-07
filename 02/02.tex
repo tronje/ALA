@@ -1,0 +1,85 @@
+\newcommand{\authorinfotitle}{Jonathan Siems, Matr.-Nr.\\ Lina, Matr.-Nr.\\ Tronje Krabbe, Matr.-Nr.}
+\newcommand{\authorinfo}{Jonathan Siems, Lina, Tronje Krabbe}
+\newcommand{\titleinfo}{ALA 02 17.04.2014}
+\newcommand{\qed}{\square}
+\newcommand{\todo}{\textbf{\textcolor{red}{TODO}}}
+
+\newcommand{\limp}{\underset{n \to \infty}{\lim}}
+\newcommand{\limn}{\underset{n \to - \infty}{\lim}}
+
+\documentclass [a4paper,11pt]{article}
+\usepackage[german,ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\usepackage{breqn}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{color}
+
+\author{\authorinfotitle}
+\title{\titleinfo}
+\date{\today}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\authorinfo}
+% \fancyhead[L]{\authorinfo}
+% \fancyhead[R]{\titleinfo}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+\maketitle
+    \begin{enumerate}
+        % Aufgabe 1
+        \item[\textbf{1.}]
+            \begin{enumerate}
+                \item[(i)]
+                    \begin{align}
+                        \limp
+                        &\left( \frac{-3n^4+2n^2+n+1}{-7n^4+25} \right) \\
+                        \Leftrightarrow \limp
+                        &\left( \frac{n^4}{n^4} \cdot \frac{-3+ \frac{2}{n^2} + \frac{1}{n^3} + \frac{1}{n^4}}{-7+ \frac{25}{n^4}} \right) \\
+                        \Leftrightarrow &\frac{3}{7}
+                    \end{align}
+                \item[(ii)]
+                    \begin{align}
+                        \limp
+                        &\left( \frac{-3n^4+2n^2+n+1}{-7n^5+25} \right) \\
+                        \Leftrightarrow \limp
+                        &\left( \frac{1}{n^5} \cdot \frac{-3+ \frac{2}{n^2} + \frac{1}{n^3} + \frac{1}{n^4}}{-7+ \frac{25}{n^5}} \right) \\
+                        \Leftrightarrow &0 % IST DAS RICHTIG??
+                    \end{align}
+                \item[iii)]
+                    \begin{align}
+                        \limp
+                        &\left( \frac{-3n^5+2n^2+n+1}{-7n^4+25} \right) \\
+                        \Leftrightarrow \limp
+                        &\left( \frac{n}{1} \cdot \frac{-3+ \frac{2}{n^3} + \frac{1}{n^4} + \frac{1}{n^5}}{-7+ \frac{25}{n^4}} \right) \\
+                        \Leftrightarrow &\infty
+                    \end{align}
+                \item[iv)]
+                    \begin{align}
+                        \limp
+                        &\left( \frac{6n^3+2n-3}{9n^2+2} - \frac{2n^3+5n^2+7}{3n^2+3} \right) \\
+                        \Leftrightarrow \limp
+                        \todo
+                    \end{align}
+            \end{enumerate}
+        % Aufgabe 2
+        \item[\textbf{2.}]
+            
+        % Aufgabe 3
+        \item[\textbf{3.}]
+
+        % Aufgabe 4
+        \item[\textbf{4.}]
+
+    \end{enumerate}
+
+
+\end{document}
