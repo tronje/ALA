@@ -1,5 +1,6 @@
+\newcommand{\authorinfotitle}{Jonathan Siems, Matr.-Nr.\\ Lina Matr.-Nr.\\ Tronje Krabbe, Matr.-Nr.}
 \newcommand{\authorinfo}{Jonathan Siems, Lina, Tronje Krabbe}
-\newcommand{\titleinfo}{ALA 01 (HA) zum 10.04.2014}
+\newcommand{\titleinfo}{ALA 01 10.04.2014}
 \newcommand{\qed}{\square}
 
 \documentclass [a4paper,11pt]{article}
@@ -15,14 +16,15 @@
 \usepackage{fancyhdr}
 \usepackage{multicol}
 
-\author{\authorinfo}
+\author{\authorinfotitle}
 \title{\titleinfo}
 \date{\today}
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\authorinfo}
-\fancyhead[R]{\titleinfo}
+\fancyhead[C]{\authorinfo}
+% \fancyhead[L]{\authorinfo}
+% \fancyhead[R]{\titleinfo}
 \fancyfoot[C]{\thepage}
 
 \begin{document}
