@@ -51,7 +51,7 @@
                         &\left( \frac{-3n^4+2n^2+n+1}{-7n^5+25} \right) \\
                         \Leftrightarrow \limp
                         &\left( \frac{1}{n^5} \cdot \frac{-3+ \frac{2}{n^2} + \frac{1}{n^3} + \frac{1}{n^4}}{-7+ \frac{25}{n^5}} \right) \\
-                        \Leftrightarrow \ &0 % IST DAS RICHTIG?? -- Nenner wird unendlich groß, 0 ist  richtig.
+                        \Leftrightarrow \ &0 % IST DAS RICHTIG??
                     \end{align}
                 \item[(iii)]
                     \begin{align}
@@ -80,7 +80,7 @@
 			&\left( \frac{\sqrt{9n^4+n^2+1}-2n^2+3}{\sqrt{4n^4+2n^3+4n^2++n+1}} \right) \\
 			\Leftrightarrow \limp
 			&\left( \frac{n^4}{n^4} \cdot \frac{\sqrt{9+\frac{1}{n^2}+\frac{1}{n^4}}-\frac{2}{n^2}+\frac{3}{n^4}}{\sqrt{4+\frac{2}{n}+\frac{4}{n^2}+\frac{1}{n^3}+\frac{1}{n^4}}}\right) \\
-			\Leftrightarrow \ \frac{\sqrt{9}}{\sqrt{4}} \Leftrightarrow \ \frac{3}{2} %Not sure if correct, or bullshit.
+			\Leftrightarrow \ \frac{\sqrt{9}}{\sqrt{4}} \Leftrightarrow \ \frac{3}{2}
                     \end{align}
             \end{enumerate}
         % Aufgabe 2
