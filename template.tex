@@ -1,27 +1,30 @@
 \newcommand{\authorinfotitle}{Jonathan Siems, 6533519, Gruppe 12\\ Tronje Krabbe, 6435002, Gruppe 9}
 \newcommand{\authorinfo}{Jonathan Siems, Tronje Krabbe}
-\newcommand{\titleinfo}{ALA NR ABGABEDATUM}
-\newcommand{\qed}{\square}
-\newcommand{\todo}{\textbf{\textcolor{red}{TODO}}}
 
+\newcommand{\titleinfo}{ALA BLATTNR. ABGABEDATUM}
+\newcommand{\qed}{\square}
 \newcommand{\limp}{\underset{n \to \infty}{\lim}}
 \newcommand{\limn}{\underset{n \to - \infty}{\lim}}
+\newcommand{\todo}{\textbf{\textcolor{red}{TODO}}}
+\newcommand{\todaynum}{\the\day.\the\month.\the\year}
 
-\documentclass [a4paper,11pt]{article}
+\documentclass[a4paper,12pt]{article}
+\usepackage[a4paper]{geometry}
 \usepackage[german,ngerman]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{amssymb}
+\usepackage{amsmath,amssymb,amstext}
 \usepackage{mathtools}
-\usepackage{amsmath}
 \usepackage{enumerate}
 \usepackage{breqn}
 \usepackage{fancyhdr}
 \usepackage{multicol}
+\usepackage{color}
+\usepackage{microtype}
+\usepackage{booktabs}
 
-\author{\authorinfotitle}
 \title{\titleinfo}
+\author{\authorinfotitle}
 \date{\today}
 
 \pagestyle{fancy}
@@ -30,12 +33,13 @@
 \fancyhead[L]{ALA Hausaufgaben}
 \fancyfoot[C]{\thepage}
 
+
 \begin{document}
 \maketitle
     \begin{enumerate}
         % Aufgabe 1
         \item[\textbf{1.}]
-            
+              
         % Aufgabe 2
         \item[\textbf{2.}]
             
@@ -45,7 +49,9 @@
         % Aufgabe 4
         \item[\textbf{4.}]
 
+
     \end{enumerate}
 
 
 \end{document}
+
