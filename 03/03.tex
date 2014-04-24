@@ -5,11 +5,13 @@
 \newcommand{\qed}{\square}
 \newcommand{\limp}{\underset{n \to \infty}{\lim}}
 \newcommand{\limn}{\underset{n \to - \infty}{\lim}}
+\newcommand{\limo}{\underset{n \to 0}{\lim}}
 \newcommand{\todo}{\textbf{\textcolor{red}{TODO}}}
 \newcommand{\todaynum}{\the\day.\the\month.\the\year}
+\newcommand{\brac}[1]{\left(#1\right)}
 
 \documentclass[a4paper,12pt]{article}
-\usepackage[a4paper]{geometry}
+%\usepackage[a4paper]{geometry}
 \usepackage[german,ngerman]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -24,6 +26,7 @@
 \usepackage{booktabs}
 \usepackage{tikz}
 \usepackage{pgfplots}
+\usepackage{lmodern}
 
 \title{\titleinfo}
 \author{\authorinfotitle}
@@ -154,11 +157,24 @@
                     ** an dieser Stelle wurde benutzt, dass die Wurzelfunktion stetig ist.
             \end{enumerate}
         % Aufgabe 3
-        \item[\textbf{3.}]
+        \item[\textbf{3.}]    
+                Wir wollen zeigen, dass  $g(f(x_n)) \rightarrow g(f(x_0))$  gilt,  somit die Nacheinanderausführung stetiger Funktionen ebenfalls stetig ist.
+               $ x_n $ und  $x_0 $ befinden sich für  $x_n \rightarrow x_0 $ beide in der Definitionsmenge von  $g \circ f $.\\
+                Da  $f $ an der Stelle  $x_0 $ stetig ist folgt  f(x_n) $\rightarrow f(x_0).$ \\
+                Da \ $g$ \  an der Stelle \ $f(x_0)$ \  stetig ist gilt somit:\\ \\
+                $$g(f(x_n)) \rightarrow g(f(x_0).$$\\
+            
 
         % Aufgabe 4
         \item[\textbf{4.}]
-        
+                $$ \limo (f(x)) = \limo \brac{(\cos\brac{\frac{1}{x}}} = \ cos(\infty) $$ \\
+                Geht  $x \rightarrow 0$  wird unser Wert für  $\cos(\frac{1}{x}) \Rightarrow \cos(\infty)$,
+                \\somit fängt die Funktion an, immer schneller zu alternieren.\\ (Die Periode von Cosinus bleibt immer konstant). \\ Somit ist die Funktion an der Stelle $x_0 = 0$ nicht stetig.
+
+                $$\limo (g(x)) = \limo \brac{x \cdot \cos\frac{1}{x}} = 0 $$
+                Geht $x \rightarrow 0$ nimmt $\brac{(\cos\brac{\frac{1}{x}}}$ auch hier wieder den wert 
+                $\cos(\infty)$ an, das verknüpfpte x allerdings nimmt den Wert 0 an, somit geht der ganze Funktionswert ebenfalls gegen 0. \\ Darum ist diese Funktion an der Stelle \ $x = 0$ \ stetig.
+
 
 	\end{enumerate}
 
