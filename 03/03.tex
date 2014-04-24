@@ -111,7 +111,7 @@
                     \end{tikzpicture}
                 \]
                 \\
-                Sei $x_0 \in D(g)\textbackslash \mathbb{Z}$.
+                Sei $x_0 \in D(g) $%\textbackslash \mathbb{Z}$.
                 So muss für jede Folge $(x_n)_{n \in \mathbb{N}}$ mit
                 \[
                     \limp x_n = x_0
@@ -120,17 +120,19 @@
                 \[
                     \limp g(x_n) = g(x_0) % = x_0 - \lfloor x_0 \rfloor
                 \]
-                Also:
+                Angenommen, $x_0 \in \mathbb{Z}$. Dann gilt aber:
                 \[
-                    \limp g(x_n)
-                    = \limp (x_n - \lfloor x_n \rfloor)
-                    = \limp x_n - \limp \lfloor x_n \rfloor
-                    = x_0 - \limp \lfloor x_n \rfloor
+                    \limp g(x_n) = x_0 - \limp \lfloor x_n \rfloor = x_0 - (x_0 - 1) = 1
                 \]
-                Da Abrundung nicht stetig ist, weiss ich leider nicht weiter...
-                % So muss gelten: Es gibt für alle $\epsilon > 0$ ein $\delta > 0$,
-                % so dass $|g(x) - g(x_0)|< \epsilon$ für alle
-                % $x \in D(g)$ mit $|x-x_0| < \delta$ gilt.
+                Und:
+                \[
+                    g(x_0) = x_0 - \lfloor x_0 \rfloor = x_0 - x_0 = 0
+                \]
+                Demnach ist $g$ nicht in $x_0$ stetig, wenn $x_0 \in \mathbb{Z}$. Liegt $x_0$ nicht in der Menge der ganzen Zahlen,
+                s"ahe die obere Gleichung so aus:
+                \[
+                    g(x_0) = x_0 - \lfloor x_0 \rfloor = x_0 - (x_0 - 1) = 1
+                \]
             \end{enumerate}
         % Aufgabe 2
         \item[\textbf{2.}]
@@ -144,7 +146,7 @@
                         {\sqrt{\limp 1-\frac{1}{n}+\frac{1}{n^2}}+4} \\
                         &=& \frac{\sqrt{3}}{5}
                     \end{align*}
-                    * an dieser Stelle wurde benutzt, dass die Wurzelfunktion stetig ist.
+                * an dieser Stelle wurde benutzt, dass die Wurzelfunktion stetig ist.
                 \item[b)]
                     \begin{align*}
                         &&\limp \left( \cos \left( \frac{\sqrt{10n^2 -n}-n}{2n+3} \right) \right) \\
@@ -153,8 +155,8 @@
                         & \overset{**}{=} & \cos \left( \frac{\sqrt{\limp 10-\frac{1}{n}}-1}{\limp 2+\frac{3}{n}} \right) \\
                         &=& \cos \left( \frac{\sqrt{10}-1}{2} \right)
                     \end{align*}
-                    * an dieser Stelle wurde benutzt, dass die Cosinusfunktion stetig ist. \\
-                    ** an dieser Stelle wurde benutzt, dass die Wurzelfunktion stetig ist.
+                * an dieser Stelle wurde benutzt, dass die Cosinusfunktion stetig ist. \\
+                ** an dieser Stelle wurde benutzt, dass die Wurzelfunktion stetig ist.
             \end{enumerate}
         % Aufgabe 3
         \item[\textbf{3.}]    \ \\
