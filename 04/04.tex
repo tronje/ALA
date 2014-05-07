@@ -9,7 +9,7 @@
 \newcommand{\abgabe}{\textbf{\textcolor{red}{ABGABEDATUM}}}
 \newcommand{\titleinfo}{ALA BLATTNR. \abgabe}
 
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,11pt]{article}
 \usepackage[a4paper]{geometry}
 \usepackage[german,ngerman]{babel}
 \usepackage[utf8]{inputenc}
@@ -48,11 +48,50 @@
         	\todo
         % Aufgabe 3
         \item[\textbf{3.}]
-	\todo
+            \begin{enumerate}
+            \item[{a)}]
+                    \begin{align*}
+                    \text{Umformen:}& \\
+                    f(x) \ &= \ (x\ +\ 1)^{x+2} \ = \ e^{ln(x+1)^{x+2}} \ = \  e^{ln(x+1)(x+2)} \\
+                    \text{Differenzieren:}& \\
+                    f'(x) \ &= \  \left(e^{ln(x+1)(x+2)} \right)'  \\
+                    &=  e^{ln(x+1)(x+2)} \cdot \left((x+2) \cdot ln(x+1)\right)'  \\
+                    &= e^{ln(x+1)(x+2)} \cdot \left(x \cdot ln(x+1) \ +\ (x+2)\cdot \frac{1}{(x+1)}\right) \\
+                    &= (x\ +\ 1)^{x+2} \cdot \left(x \cdot ln(x+1) \ +\ \frac{x+2}{(x+1)}\right) \\
+                    \end{align*}
+             \item[{b)}]
+                    \begin{enumerate}
+
+                    \item[(i)]
+                        \begin{align*}
+                            \text{Umformen:}& \\
+                            g(x) \ &= \ (x^2 +5)^{x^4+3} = e^{ln(x^2+5)^{x^4+3}} = e^{(x^4 +3) \cdot ln(x^2+5) } \\ 
+                            \text{Differenzieren:}& \\
+                            g'(x) &= \left(e^{(x^4 +3) \cdot ln(x^2+5)} \right)' \\
+                            &= e^{(x^4 +3) \cdot ln(x^2+5)} \cdot \left((x^4 +3) \cdot ln(x^2+5) \right) \\
+                            &= e^{(x^4 +3) \cdot ln(x^2+5)} \cdot \left(4x^3 \cdot  ln(x^2+5) + (x^4 +3) \cdot \frac{2x}{x^2+5} \right)\\
+                            &= (x^2 +5)^{x^4+3} \cdot \left(4x^3 \cdot  ln(x^2+5) + \frac{2x^5 + 6x}{x^2+5} \right)
+                        \end{align*}
+                    \item[(ii)]
+                        \begin{align*}
+                            \text{Umformen:} & \\
+                            h(x) &= (x^4 +3)^{\sqrt{3x+1}} = e^{ln(x^4 +3)^{\sqrt{3x+1}}} = e^{\sqrt{3x+1}\cdot ln(x^4+3)} \\
+                            \text{Differenzieren:}& \\
+                            h'(x) &=  e^{\sqrt{3x+1}\cdot ln(x^4+3)} \cdot \left(\sqrt{3x+1}\cdot ln(x^4+3) \right) \\
+                            &= e^{\sqrt{3x+1}\cdot ln(x^4+3)} \cdot \left((\sqrt{3x+1})' \cdot ln(x^4+3) + \sqrt{3x+1} \cdot \frac{4x^3}{x^4+3} \right) \\
+                            &= (x^4 +3)^{\sqrt{3x+1}} \cdot \left((\sqrt{3x+1})' \cdot ln(x^4+3) +  \frac{4x^3\sqrt{3x+1}}{x^4+3} \right)
+                        \end{align*}
+                    \end{enumerate}
+            \item[{c)}] \todo                 
+            \end{enumerate}
+
         % Aufgabe 4
         \item[\textbf{4.}]
 	\todo
-
+        \item[\textbf{5.}]
+            \todo
+        \item[\textbf{6.}]
+            \todo
     \end{enumerate}
 
 
