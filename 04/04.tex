@@ -1,5 +1,5 @@
-\newcommand{\authorinfotitle}{Jonathan Siems, 6533519, Gruppe 12\\ Tronje Krabbe, 6435002, Gruppe 9}
-\newcommand{\authorinfo}{Jonathan Siems, Tronje Krabbe}
+\newcommand{\authorinfotitle}{Jonathan Siems, 6533519, Gruppe 12\\ Jan-Thomas Riemenschneider,, Gruppe 12 \\ Tronje Krabbe, 6435002, Gruppe 9}
+\newcommand{\authorinfo}{Jonathan Siems, Tronje Krabbe, Jan-Thomas Riemenschneider}
 
 \newcommand{\qed}{\square}
 \newcommand{\limp}{\underset{n \to \infty}{\lim}}
@@ -7,7 +7,7 @@
 \newcommand{\todo}{\textbf{\textcolor{red}{TODO}}}
 \newcommand{\todaynum}{\the\day.\the\month.\the\year}
 \newcommand{\abgabe}{\textbf{\textcolor{red}{ABGABEDATUM}}}
-\newcommand{\titleinfo}{ALA BLATTNR. \abgabe}
+\newcommand{\titleinfo}{ALA BLATTNR. 05 08.05.2014}
 
 \documentclass[a4paper,11pt]{article}
 \usepackage[a4paper]{geometry}
@@ -57,7 +57,7 @@
                     f'(x) \ &= \  \left(e^{ln(x+1)(x+2)} \right)'  \\
                     &=  e^{ln(x+1)(x+2)} \cdot \left((x+2) \cdot ln(x+1)\right)'  \\
                     &= e^{ln(x+1)(x+2)} \cdot \left(x \cdot ln(x+1) \ +\ (x+2)\cdot \frac{1}{(x+1)}\right) \\
-                    &= (x\ +\ 1)^{x+2} \cdot \left(x \cdot ln(x+1) \ +\ \frac{x+2}{(x+1)}\right) \\
+                    &= (x\ +\ 1)^{x+2} \cdot \left(x \cdot ln(x+1) \ +\ \frac{x+2}{(x+1)}\right) 
                     \end{align*}
              \item[{b)}]
                     \begin{enumerate}
@@ -77,17 +77,46 @@
                             \text{Umformen:} & \\
                             h(x) &= (x^4 +3)^{\sqrt{3x+1}} = e^{ln(x^4 +3)^{\sqrt{3x+1}}} = e^{\sqrt{3x+1}\cdot ln(x^4+3)} \\
                             \text{Differenzieren:}& \\
+                            h'(x) &= e^{\sqrt{3x+1}\cdot ln(x^4+3)} \\
                             h'(x) &=  e^{\sqrt{3x+1}\cdot ln(x^4+3)} \cdot \left(\sqrt{3x+1}\cdot ln(x^4+3) \right) \\
                             &= e^{\sqrt{3x+1}\cdot ln(x^4+3)} \cdot \left((\sqrt{3x+1})' \cdot ln(x^4+3) + \sqrt{3x+1} \cdot \frac{4x^3}{x^4+3} \right) \\
-                            &= (x^4 +3)^{\sqrt{3x+1}} \cdot \left((\sqrt{3x+1})' \cdot ln(x^4+3) +  \frac{4x^3\sqrt{3x+1}}{x^4+3} \right)
+                            &= (x^4 +3)^{\sqrt{3x+1}} \cdot \left( \frac{3}{2\sqrt{1+ 3 \ x}} \cdot ln(x^4+3) +  \frac{4x^3\sqrt{3x+1}}{x^4+3} \right)
                         \end{align*}
                     \end{enumerate}
-            \item[{c)}] \todo                 
+            \item[{c)}] 
+                        \begin{align*}
+                            \text{Umformen:} & \\
+                            f(x) &= 3^x \ = \ e^{ln(3^x)} \ = \  e^{x \cdot ln3} \\
+                            \text{Differenzieren:}& \\
+                            f'(x) &= \left(e^{x \cdot ln3} \right)' \\
+                            &= e^{x \cdot ln3} \cdot \left(x \cdot ln3 \right)'\\
+                            &= e^{x \cdot ln3} \cdot \left( 1* ln3+x \cdot \frac{0}{3}\right) \\ 
+                            &= 3^x  \cdot \left(ln3 \right) \\
+                            \\
+                            \text{Umformen:} & \\
+                            f(x) &= x^{\frac{1}{3}} = e^{ln(x^{\frac{1}{3}})} = e^{\frac{1}{3}\cdot ln\ x} \\
+                            \text{Differenzieren:}& \\
+                            f'(x) &= \left(e^{\frac{1}{3}\cdot lnx}\right)' \\
+                            f'(x) &= e^{\frac{1}{3}\cdot ln\ x} \cdot \left(\frac{1}{3}\cdot ln x\right)' \\
+                            &= e^{\frac{1}{3}\cdot ln x} \cdot \left( ln x + \frac{1}{3}  \cdot \frac{1}{x} \right) \\
+                            &= x^{\frac{1}{3}} \cdot \left(ln x + \frac{\frac{1}{3}x}{x} \right) \\ \\ \\
+                        \end{align*}             
             \end{enumerate}
 
         % Aufgabe 4
         \item[\textbf{4.}]
-	\todo
+            \begin{enumerate}
+                \item[(ii)] 
+                   $ f'(x)= cos(x^2) \cdot 2x$
+                \item[(iii)]
+                    $f'(x)= 2 \cdot sin(x) \cdot cos(x)$
+                \item[(iv)]
+                    $f'(x) = cos(2x)$
+                \item[(v)]
+                    $f'(x) = \frac{1}{2\sqrt{-(-1+x)x}}$
+                \item[(vi)]
+                    $ f'(x)= (x^3 - 1)^{arctan(x)} \cdot \frac{1}{1+x^2} \cdot ln(x^3 - 1) + arctan(x) \cdot \left( \frac{1}{x^3-1} \cdot 3x^2 \right) $    
+            \end{enumerate}            
         \item[\textbf{5.}]
             \todo
         \item[\textbf{6.}]
