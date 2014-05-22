@@ -89,10 +89,49 @@
                 \item[c)]
                     Hierfür berechnen wir das Integral von f zwischen 0 und 6, und teilen das Ergebnis durch $6-0=6$.\\
                     \begin{align*}
-                        bla
+                        \int_0^6 9t \cdot e^{-\frac{1}{3}t} \mathrm{d}t\\
+                        = [-27 e^{-\frac{1}{3}t} \cdot (t+3)]_0^6\\
+                        = -243 e^{-2} + 81\\
+                        = 48,11... \\
+                        \frac{48,11...}{6} \approx 8,02
                     \end{align*}
+                    Die durchschnittliche Konzentration in den ersten 6 Stunden liegt demnach bei circa 8,02 Milligramm pro Liter.\\
+                    Als, wenn auch nur sehr grobe, Probe kann man die ersten drei Werte aus Aufgabenteil a addieren und durch drei Teilen,
+                    was $7, \overline{6}$ ergibt.
                 \item[d)]
+                    Analog zu Aufgabenteil c):\\
+                    \begin{align*}
+                        \int_6^12 9t \cdot e^{-\frac{1}{3}t} \mathrm{d}t\\
+                        = [-27 e^{-\frac{1}{3}t} \cdot (t+3)]_6^12\\
+                        = -405 e^{-4} + 243 e^{-2} \\
+                        = 25,46...\\
+                        \frac{25,46...}{6} \approx 4,24
+                    \end{align*}
+                    In den zweiten 6 Stunden liegt die Durchschnittliche Konzentration also bei 4,24 mg/l.\\
+                    Auch hier kann wieder, als grobe Probe, Aufgabenteil a herangezogen werden.\\
+                    $\frac{7,31+1,98}{2} \approx 4,65$.
                 \item[e)]
+                    Skizze:\\
+                    \begin{tikzpicture}[scale=0.9]
+                        \begin{axis}[
+                            ymin=0,ymax=11,
+                            xmin=0,xmax=14.5,
+                            x=1cm, y=0.5cm,
+                            axis x line=middle,
+                            axis y line=middle,
+                            axis line style=->,
+                            xlabel={$t$},
+                            ylabel={$f(t)$},
+                            ]
+                            \addplot[very thick, no marks, black, -] expression[domain=0:12,samples=100]{9*x*e^(-(1/3)*x)};
+                            \addplot[very thick, no marks, black, -, dotted] expression[domain=12:14,samples=20]{9*x*e^(-(1/3)*x)};
+                        \end{axis}
+
+                        \node[fill, inner sep=2pt, circle, label=above right:{\small Stärkster Abbau/Wendepunkt}] at (6,3.66) {};
+                    \end{tikzpicture}
+                    \( f'(t)=9e^{-\frac{1}{3}t} - 3e^{-\frac{1}{3}t} \cdot t \)\\
+                    \( f''(t)= e^{-\frac{1}{3}t} \cdot x - 6e^{-\frac{1}{3}t} = 0
+                    \Leftrightarrow e^{-\frac{1}{3}t} \cdot x = 6e^{-\frac{1}{3}t} \Leftrightarrow x=6 \)
             \end{enumerate}
 
         % Aufgabe 4
