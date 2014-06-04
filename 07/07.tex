@@ -48,15 +48,54 @@
         \begin{enumerate}
             \item[a)]
                 \begin{align*}
+                    \begin{tikzpicture}
+                        \begin{axis}[
+                            ymin=0,ymax=10,
+                            xmin=-4,xmax=7,
+                            x=1cm, y=0.5cm,
+                            axis x line=middle,
+                            axis y line=middle,
+                            axis line style=->,
+                            xlabel={$x$},
+                            ylabel={$f(x)$},
+                            ]
+                            \addplot[thick, no marks, black, -] expression[samples=100]{e^(-x)};
+                        \end{axis}
+                    \end{tikzpicture}
+                \end{align*}
+                Die $e$-Funktion besitzt keinen Wendepunkt, genauso wenig wie $e^{-x}$.
+
+                \begin{align*}
+                    \begin{tikzpicture}
+                        \begin{axis}[
+                            ymin=0,ymax=1.5,
+                            xmin=0,xmax=50,
+                            x=0.2cm, y=2cm,
+                            axis x line=middle,
+                            axis y line=middle,
+                            axis line style=->,
+                            xlabel={$x$},
+                            ylabel={$g(x)$},
+                            ]
+                            \addplot[thick, no marks, black, -] expression[domain=0:100,samples=100]{1/(1+x)};
+                        \end{axis}
+                    \end{tikzpicture}
+                \end{align*}
+                Wendepunktberechnung:
+                \begin{align*}
+
+                \end{align*}
+
+                \begin{align*}
                 h(x) &= \frac{1}{1+x^2} \\
                 h'(x) &= \frac{0 \cdot (1+x^2)-2x \cdot 1}{(1+x^2)^2} \Rightarrow \frac{-2x}{(1+x^2)} \\
                 h''(x) &= \frac{-2 \cdot(1+x^2)^2 - 2(1+x^2) \cdot -4x^2}{(1+x^2)^4} \quad = \quad \frac{-2(1+x^2)-(-8x^2)}{(1+x^2)^3} \\
                 &= \frac{-2 -2x^2 + 8x^2}{1+x^2)^3} \quad = \quad \frac{6x^2-2}{(1+x^2)^3}\\ \\
-                \text{Mit Hilfe }& \text{der PQ-Formel lösen wir nach x auf:} \\
-                p &= \frac{0}{2} \qquad q = -\frac{1}{3} \\ \\
-                x_{1|2} &= \frac{0}{2} \pm \sqrt{\left(\frac{0}{2}\right)^2 -(-\frac{1}{3})} \\ \\
-                x_1 &\approx 0,577 \\
-                x_2 &\approx - 0,577 
+                % \text{Mit Hilfe }& \text{der PQ-Formel lösen wir nach x auf:} \\
+                % p &= \frac{0}{2} \qquad q = -\frac{1}{3} \\ \\
+                % x_{1|2} &= \frac{0}{2} \pm \sqrt{\left(\frac{0}{2}\right)^2 -(-\frac{1}{3})} \\ \\
+                % x_1 &\approx 0,577 \\
+                % x_2 &\approx - 0,577 
                 \end{align*}
 
             \item[b)]
