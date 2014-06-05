@@ -167,7 +167,8 @@
 
         % Aufgabe 2
         \item[\textbf{2.}]
-            \subitem a)
+            \begin{enumerate}
+            \item[a)]
                 \begin{align*}
                     &\sum_{i=1}^\infty \frac{i}{2^i}\\
                     &\overset{*}{=} \sum_{i=0}^\infty \frac{i}{2^i}
@@ -178,27 +179,66 @@
                     \underset{i \to \infty}{\lim} \sqrt[i]{\frac{i}{2^i}} < 1
                 \end{align*}
                 Da $\sqrt[i]{i} \to 1$ für $i \to \infty$ und $2^i \geq 1$, ist diese Aussage korrekt. Somit konvergiert die Reihe.
-            \subitem b)
-                gaaaaay
+            \item[b)]
+                Wir betrachten den folgenden Grenzwert:
+                \begin{align*}
+                    &\underset{i \to \infty}{\lim} \Big| \frac{\frac{(-1)^{i+1}\cdot (i+1)!}{(i+1)^{i+1}}}{\frac{(-1)^i \cdot i!}{i^i}} \Big|\\
+                    &= \underset{i \to \infty}{\lim} \Big| \frac{\frac{(-1)^{i+1}\cdot i!}{(i+1)^{i}}}{\frac{(-1)^i \cdot i!}{i^i}} \Big|\\
+                    &= \underset{i \to \infty}{\lim} \Big| \frac{(-1)^{i+1}\cdot i! \cdot i^i}{(i+1)^i (-1)^i \cdot i!} \Big|\\
+                    &= \underset{i \to \infty}{\lim} \Big| - \frac{i^i}{(i+1)^i} \Big|\\
+                    &= \underset{i \to \infty}{\lim} \frac{i^i}{(i+1)^i}\\
+                    &\overset{*}{=} \frac{1}{e}
+                \end{align*}
+                * Weil das ja klar ist.\\
+                Da $\frac{1}{e} < 1$ ist die Konvergenz nachgewiesen.
+            \end{enumerate}
         % Aufgabe 3
         \item[\textbf{3.}]
-            \subitem a)
+            Für $\sum_{i=0}^\infty i^22^ix^i$ soll der Konvergenzradius ermittelt werden.
+            \begin{enumerate}
+            \item[a)]
+                Mithilfe der Limes-Version des Quotientenkriteriums:\\
+                Wir betrachten den folgenden Grenzwert. Ist dieser kleiner als 1, so liegt Konvergenz vor. Ist er größer, so divergiert
+                die Reihe. Wir wählen ein beliebiges $x \in \mathbb{R}$; in der folgenden Rechnung ist $x$ also fest gewählt.
                 \begin{align*}
-                    \text{Skript Seite 123f steht alles}
+                    &\underset{i \to \infty}{\lim} \Big|\frac{(i+1)^22^{i+1}x^{i+1}}{i^22^ix^i}\Big|\\
+                    &= \underset{i \to \infty}{\lim} \Big|\frac{(i+1)^2}{i^2}\cdot 2x \Big|\\
+                    &= \underset{i \to \infty}{\lim}\left( \Big|\frac{(i+1)^2}{i^2}\Big| \cdot |2x| \right)\\
+                    &\overset{*}{=} 2|x| \cdot \underset{i \to \infty}{\lim} \Big|\frac{(i+1)^2}{i^2}\Big|\\
+                    &= 2|x|
                 \end{align*}
-
-            \subitem b)
-
+                * An dieser Stelle wurde genutzt, dass $x$ fest gewählt wurde.
+                Ausserdem gilt:
+                \begin{align*}
+                    2|x| \Leftrightarrow |x| < \frac{1}{2}
+                \end{align*}
+                Daraus folgt: $R = \frac{1}{2}$
+            \item[b)]
+                Mithilfe der Limes-Version des Wurzelkriteriums:\\
+                Wir betrachten abermals einen Grenzwert, und es gilt abermals, dass die Reihe konvergiert, wenn der besagt Grenzwert
+                kleiner als 1 ist. Es sei wieder $x \in \mathbb{R}$ beliebig, aber fest gewählt.
+                \begin{align*}
+                    &\underset{i \to \infty}{\lim} \sqrt[i]{|i^22^ix^i|}\\
+                    &= \underset{i \to \infty}{\lim} \left(\sqrt[i]{i^2}\cdot\sqrt[i]{2^i}\cdot\sqrt[i]{x^i}\right)\\
+                    &\overset{*}{=} 2x \cdot \underset{i \to \infty}{\lim} \left(\sqrt[i]{i}\cdot \sqrt[i]{i}\right)\\
+                    &= 2x
+                \end{align*}
+                * An dieser Stelle wurde genutzt, dass $x$ fest gewählt wurde. Weiterhin gilt:
+                \begin{align*}
+                    2x < 1 \Leftrightarrow x < \frac{1}{2}
+                \end{align*}
+                Dementsprechend gilt $R = \frac{1}{2}$.
+            \end{enumerate}
         % Aufgabe 4
         \item[\textbf{4.}]
-	\todo
+	       \todo
 
         \item[\textbf{5.}]
             \begin{enumerate}
 
                 \item[a)]
 
-                        $$ \int\limits_{1}^{n+1}  \frac{1}{x} dx  \ \leq H_n \quad (n=1,2,...). \quad \Big| \quad \text{Es gilt }n \in \mathbb{N}$$ . 
+                    $$ \int\limits_{1}^{n+1}  \frac{1}{x} dx  \ \leq H_n \quad (n=1,2,...). \quad \Big| \quad \text{Es gilt }n \in \mathbb{N}$$
 
                     \begin{tikzpicture}
                     \begin{axis}[
