@@ -235,22 +235,22 @@
 	       \todo
 
         \item[\textbf{5.}]
-            \begin{enumerate}
+ \begin{enumerate}
 
                 \item[a)]
 
                     $$ \int\limits_{1}^{n+1}  \frac{1}{x} dx  \ \leq H_n \quad (n=1,2,...). \quad \Big| \quad \text{Es gilt }n \in \mathbb{N}$$
-
+                    Skizze: \\[0.1cm]
                     \begin{tikzpicture}
                     \begin{axis}[
-                        ymin=0,ymax=1.5,
+                        ymin=0,ymax=8,
                         xmin=0,xmax=8,
-                        x=1.5cm, y=3cm,
+                        x=1.5cm, y=0.4cm,
                         axis x line=middle,
                         axis y line=middle,
                         axis line style=->,
                         xlabel={$x$},
-                        ylabel={$f(x)$},
+                        ylabel={$ \ f(x)$},
                         ]
                         \addplot[very thick, no marks, black, -] expression[domain=0:8,samples=100]{1/x};
                     \end{axis}
@@ -265,13 +265,17 @@
                 Da wir bei der Berechnung eines bestimmten Integrals bei einem gleichen Wert für Integrationsober- und untergrenze immer $0$ als Ergebnis erhalten würden, \\ ist für die Obergrenze hier $n+1$ gewählt. \\[0.3cm]
                 Bei der Integration von $\int \frac{1}{x}dx$ erhalten wir $\Big[ln(x)\Big]$,\\ für die Untergrenze also $ln(1) = 0$. \\
                 Somit müssen wir für die Berechnung des Integrals $ \Big(ln(n+1) -$ \sout{$ ln(1)$}$ \Big)$ \\ lediglich den Wert der oberen Integrationsgrenze in $ln(x)$ einsetzen. \\ 
-                Man sieht, dass $ln(n+1)$ im Verhältnis zu $n$ sehr langsam wächst. \\ \\
-                Für jeden Wert von n gilt daher $\uuline{ln(n+1) \leq n}$ \\
-                Ein Beweis ist in diesem Falle obsolet, man könne ihn aber mithilfe vollständiger Induktion erbringen.
+                Man sieht, dass $ln(n+1)$ im Verhältnis zu $H_n$ sehr langsam und vorallem immer alngsamer wächst.\\ \\
+                Für jeden Wert von n gilt daher $\uuline{ln(n+1) \leq H_n}$ \\
+                Ein Beweis ist in diesem Falle obsolet (da der Logarithmus zu n immer kleiner ist als die Partialsumme von n), man könne ihn aber mithilfe vollständiger Induktion erbringen.
 
+                \item[b)]
+
+                Genau wie bei der harmonischen Reihe nimmt die Geschwindigkeit mit der die Funktion wächst ab,
+                da wir zwar die Partialsumme berechnen, aber jedes Folgeglied kleiner ist als das vorherige.
+                Die Funktion wächst immer langsamer.
 
             \end{enumerate}
-
 
         \item[\textbf{6.}]
             \begin{enumerate}
