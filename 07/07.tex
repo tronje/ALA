@@ -7,7 +7,7 @@
 \newcommand{\todo}{\textbf{\textcolor{red}{TODO}}}
 \newcommand{\todaynum}{\the\day.\the\month.\the\year}
 \newcommand{\abgabe}{\textbf{\textcolor{red}{ABGABEDATUM}}}
-\newcommand{\titleinfo}{ALA 07 29.05.2014}
+\newcommand{\titleinfo}{ALA 07 05.06.2014}
 
 \documentclass[a4paper,11pt]{article}
 \usepackage[a4paper]{geometry}
@@ -32,7 +32,6 @@
 
 \title{\titleinfo}
 \author{\authorinfotitle}
-\date{\today}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -126,19 +125,20 @@
             \item[b)]
                 \subitem (i)
                     \begin{align*}
-                        \int_0^\infty e^{-x} = \underset{b \to \infty}{\lim} [-e^{-x}]_0^b = \underset{b \to \infty}{\lim} -e^{-b} +1 = 1
+                        \int_0^\infty e^{-x} \mathrm{d}x=
+                        \underset{b \to \infty}{\lim} [-e^{-x}]_0^b = \underset{b \to \infty}{\lim} -e^{-b} +1 = 1
                     \end{align*}
                     Der Flächeninhalt ist also 1.
 
                 \subitem (ii)
                     \begin{align*}
-                        \int_0^\infty \frac{1}{1+x} = [\log(1+x)]_0^\infty = \underset{b \to \infty}{\lim} \log(b+1) - \log(1) = \infty
+                        \int_0^\infty \frac{1}{1+x} \mathrm{d}x= [\log(1+x)]_0^\infty = \underset{b \to \infty}{\lim} \log(b+1) - \log(1) = \infty
                     \end{align*}
                     Der Flächeninhalt ist also unendlich groß.
 
                 \subitem (iii)
                     \begin{align*}
-                        \int_0^\infty \frac{1}{1+x^2} = [\tan^{-1}(x)]_0^\infty = \underset{b \to \infty}{\lim} \tan^{-1}(b) - \tan^{-1}(0)
+                        \int_0^\infty \frac{1}{1+x^2} \mathrm{d}x=[\tan^{-1}(x)]_0^\infty=\underset{b \to \infty}{\lim} \tan^{-1}(b)-\tan^{-1}(0)
                         = \frac{\pi}{2}
                     \end{align*}
             \item[c)]
@@ -160,7 +160,8 @@
                     \end{axis}
                 \end{tikzpicture} \\ \\
                     &\text{Für ein bestimmtes Integral berechnen wir die Fläche zwischen x und dem Graphen:} \\
-                    & \int_{-1}^1  \frac{1}{\sqrt{1-x^2}} =  \Big[ sin^{-1}(x) \Big]_{-1}^{ \ 1} = sin^{-1}(1) - sin^{-1}(-1) \\ \\ &\approx 3.1415926535897932384626433832795028841971693993751058
+                    & \int_{-1}^1  \frac{1}{\sqrt{1-x^2}} \mathrm{d}x=  \Big[ sin^{-1}(x) \Big]_{-1}^{ \ 1}
+                    = sin^{-1}(1) - sin^{-1}(-1) \\ \\ &\approx 3.1415926535897932384626433832795028841971693993751058
             \end{align*}
         \end{enumerate}
 
@@ -272,8 +273,28 @@
             \end{enumerate}
 
 
-            \item[\textbf{6.}]
-            \todo
+        \item[\textbf{6.}]
+            \begin{enumerate}
+                \item[a)]
+                Wir unterteilen die Aufgabe, und zeigen zuerst, dass $H_n - 1 \leq \ln(n)$. Wir benutzen dazu vollständige Induktion.
+                \begin{align*}
+                    H_1 - 1 \leq \ln(1)\\
+                    \Leftrightarrow 0 \leq 0
+                \end{align*}
+                Die Aussage gilt also für $n=1$. Sie gelte auch für ein beliebiges, fest gewähltes $n$.
+                Dann muss sie auch für $n+1$ gelten:
+                \begin{align*}
+                    H_{n+1} - 1 \leq \ln(n+1)\\
+                    \Leftrightarrow \frac{1}{n+1} + H_n - 1 \leq \int_1^n \frac{1}{x}dx + \int_n^{n+1} \frac{1}{x}dx\\
+                    \Leftrightarrow \frac{1}{n+1} + H_n - 1 \leq \ln(n) + \int_n^{n+1} \frac{1}{x}dx\\
+                \end{align*}
+                Dass $\frac{1}{n+1} \leq \int_n^{n+1} \frac{1}{x}dx$, ist trivial. Die Aussage ist damit bewiesen.\\
+                Es bleibt zu beweisen, dass $\ln(n) \leq H_n$. Dass $\ln(n+1) \leq H_n$ wurde bereits in Aufgabe 5 angegeben, d.h.
+                Aussage muss gelten, da $\ln(n) < \ln(n+1)$.
+                \item[b)]
+
+
+            \end{enumerate}
 
     \end{enumerate}
 
