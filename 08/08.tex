@@ -157,7 +157,42 @@
 
         % Aufgabe 4
         \item[\textbf{4.}]
-            \todo
+            \begin{enumerate}
+                \item[a)]
+                    \begin{align*}
+                        &\underset{x \to \infty}{\lim} \left( \frac{a^x}{x^n} \right)\\
+                        =\ &\underset{x \to \infty}{\lim} \left( \frac{xa^{x-1}}{nx^{n-1}} \right)\\
+                        % =\ &\underset{x \to \infty}{\lim} \left( \frac{(x^2-x)a^{x-2}}{(n^2-n)x^{n-2}} \right)\\
+                    \end{align*}
+                    Nach de l'Hospital darf man auch die Ableitungen beider Funktionen vergleichen. Dies kann $n$-Mal fortgeführt
+                    werden, bis:
+                    \begin{align*}
+                        &\underset{x \to \infty}{\lim} \left( \frac{p(x) \cdot a^{x-n}}{q(n) \cdot x^0} \right)
+                    \end{align*}
+                    $p(x)$  ist ein Polynom $n$-ten Grades, wobei das Gleid mit Grad $n$ positiv ist (es ``beginnt'' also mit $x^n$).
+                    $q(n)$ ist ein Polynom $n$-ten Grades, ebenfalls positiv. Nun ist bereits eindeutig gezeigt, dass $f$ schneller wächst
+                    als $g$, da der Zähler des obigen Bruches der Form $x^n+...$ ist, was, mit $x \to \infty$, viel größer, nämlich unendlich, ist,
+                    als der Nenner, welcher lediglich der Form $n^n+...$ ist. $\qed$
+                \item[b)]
+                    Wir betrachten:
+                    \begin{align*}
+                        &\underset{x \to \infty}{\lim} \left( \frac{x^r}{\ln^k x} \right)\\
+                        =\ &\underset{x \to \infty}{\lim} \left( \frac{rx^{r-1}}{\frac{k \cdot \ln^{k-1}x}{x}} \right)\\
+                        =\ &\underset{x \to \infty}{\lim} \left( \frac{rx^{r}}{k \cdot \ln^{k-1}x} \right)
+                    \end{align*}
+                    Der ``Trick'', der hier angewandt wurde, ist, dass sich nach jedem durch de l'Hospital erlaubten Ableiten
+                    beider Funktionen, im Nenner von $h'$ bzw $h'', h'''$ usw. ein $x$ befindet. Dies kann dann in den Z"ahler ``hochgeschoben''
+                    werden. Nach der maximalen Anzahl Ableitungen ist der Z"ahler also bedeutend gr"oßer als der Nenner.
+                    $g$ wächst also schneller als $h$.
+                \item[c)]
+                    \begin{enumerate}
+                        \item[(i)]
+                            Die in a) angewandte Methode funktioniert auch mit $g(x)=x^r$. Sollte $r$ nicht in $\mathbb{N}$ liegen, so wird einfach
+                            $\lceil r \rceil$ Male abgeleitet.
+                        \item[(ii)]
+                            
+                    \end{enumerate}
+            \end{enumerate}
 
         % Aufgabe 5
         \item[\textbf{5.}]
