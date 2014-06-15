@@ -135,7 +135,25 @@
 
         % Aufgabe 3
         \item[\textbf{3.}]
-            \todo
+            \begin{enumerate}
+                \item [a)]
+                \item[b)]
+                \item[c)]
+                Im Folgenden bilden wir die ersten drei Ableitungen von $\sqrt[5]{x+1}$ und berechnen die Funktionswerte für $x = 0$ , die anschliessend in die Formel für Taylorpolynome eingesetzt werden:
+                \begin{align*}
+                &f(x) = \sqrt[5]{x+1} && f(0) = 1 \\
+                &f'(x) = \frac{1}{5}(x+1)^{-\frac{4}{5}} && f'(0) = \frac{1}{5} \\
+                &f''(x) = -\frac{4}{25}(x+1)^{-\frac{9}{5}} && f''(0) = -\frac{4}{25} \\
+                &f'''(x) = \frac{36}{125}(x+1)^{-\frac{14}{5}} && f'''(0) = \frac{36}{125} \\
+                \end{align*}
+                Einsetzen in $$\sum_{k=0}^{n} \frac{f^{(k)}(0)}{k!}x^k:$$ 
+                \begin{align*}
+                &T_0(x) = 1 \\
+                &T_1(x) = 1 + \frac{1}{5}x \\
+                &T_2(x) = 1 + \frac{1}{5}x -\frac{2}{25}x^2 \\
+                &T_3(x) = 1 + \frac{1}{5}x -\frac{2}{25}x^2 + \frac{6}{125}x^3 \\
+                \end{align*}
+            \end{enumerate}
 
         % Aufgabe 4
         \item[\textbf{4.}]
