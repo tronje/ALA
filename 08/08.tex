@@ -167,6 +167,7 @@
                         &h'(0)=- \infty
                     \end{align*}
                     Well shit
+                    \newpage 
                 \item[c)]
                     Im Folgenden bilden wir die ersten drei Ableitungen von $\sqrt[5]{x+1}$ und berechnen die Funktionswerte für $x = 0$,
                     die anschliessend in die Formel für Taylorpolynome eingesetzt werden:
@@ -179,9 +180,9 @@
                     Einsetzen in $$\sum_{k=0}^{n} \frac{f^{(k)}(0)}{k!}x^k:$$ 
                     \begin{align*}
                     &T_0(x) = 1 \\
-                    &T_1(x) = 1 + \frac{1}{5}x \\
-                    &T_2(x) = 1 + \frac{1}{5}x -\frac{2}{25}x^2 \\
-                    &T_3(x) = 1 + \frac{1}{5}x -\frac{2}{25}x^2 + \frac{6}{125}x^3 \\
+                    &T_1(x) = 1 + \frac{x}{5} \\
+                    &T_2(x) = 1 + \frac{x}{5} -\frac{2x^2}{25} \\
+                    &T_3(x) = 1 + \frac{x}{5} -\frac{2x^2}{25} + \frac{6x^3}{125} \\
                     \end{align*}
                 \item[d)]
                     Die Funktion $h$ ist genau dann differenzierbar, wenn der Grenzwert des Differenzenquotienten existiert (mit $x_0=0$):
@@ -239,7 +240,7 @@
             \underline{n = 4}
             $$ \int\limits_{0}^{1} sin \ x \ dx \approx \frac{1}{8}\left(sin(0) + 2 \ sin \left(\frac{1}{4}\right)+ 2 \ sin\left(\frac{2}{4}\right) + 2 \ sin\left(\frac{3}{4}\right)+ sin \ (1)\right)$$
             $$ \approx 0.45730093.$$ 
-
+            \newpage
              \underline{n = 5}
             $$ \int\limits_{0}^{1} sin \ x \ dx \approx \frac{1}{10}\left(sin(0) +  2 sin\left(\frac{1}{5}\right) + 2sin\left(\frac{2}{5}\right) + 2 sin\left( \frac{3}{5}\right) + 2 sin\left( \frac{4}{5}\right) + sin(1)\right) $$
             $$ \approx 0.45816434 $$
@@ -248,7 +249,8 @@
             \begin{align*}
             \int\limits_{0}^{1} sin \ x \ dx \approx &\frac{1}{20}\Bigg(sin(0) + 2 \ sin \left(\frac{1}{10}\right)+ 2 \ sin \left(\frac{2}{10}\right)+ 2 \ sin \left(\frac{3}{10}\right)+ 2 \ sin \left(\frac{4}{10}\right) \\ 
             &+ 2 \ sin \left(\frac{5}{10}\right)+ 2 \ sin \left(\frac{6}{10}\right)+ 2 \ sin \left(\frac{7}{10}\right)+ 2 \ sin \left(\frac{8}{10}\right)+ 2 \ sin \left(\frac{9}{10}\right)+  sin(0)\Bigg) \\[0.5cm]
-            &\approx 0.4593145488579763249099
+            &\approx 0.4593145488579763249099 \\
+            &\text{Wir kommen damit dem exakten Wert $(\approx 0.4596976941)$ schon relativ nahe.}
             \end{align*}
         % Aufgabe 6
         \item[\textbf{6.}]
@@ -256,17 +258,17 @@
                 \item [d)]
                 \begin{align*}
                     f(x) &= \frac{1}{x^2+1} \\[0.5cm]
-                    f'(x) &= \frac{0 \cdot (x^2+1) - 1 \cdot 2x}{(x^2+1)^2} \\
-                    &= \frac{-2x}{(x^2+1)^2} \\[0.5cm]
-                    f''(x) &= \frac{-2 \cdot (x^2 +1)^2 - (-2x)4x(x^2+1)}{(x^2+1)^4} \\
-                    &= \frac{-2(x^2+1)^2 - (-8x^2)(x^2+1)}{(x^2+1)^4} \\
-                    &= \frac{\cancel{(x^2+1)}(-2(x^2+1)-(-8x^2))}{(x^2+1)^3} \\
-                    &= \frac{-2x^2-2+8x^2}{(x^2+1)^3} \\
-                    &= \frac{6x^2-2}{(x^2+1)^3} \\[0.5cm]
-                    f'''(x) &= \frac{12x(x^2+1)^3 -(6x^2-2)6x(x^2+1)^2}{(x^2+1)^6} \\
-                    &= \frac{\cancel{(x^2+1)^2}(12x(x^2+1)-(36x^3-12x))}{(x^2+1)^4}
-                    &= \frac{12x^3+12x-(36x^3-12x)}{(x^2+1)^4} \\
-                    &= \frac{-24x^3+24x}{(x^2+1)^4} \\
+                    f'(x) &= \frac{0 \cdot (x^2+1) - 1 \cdot 2x}{(x^2+1)^2}  \quad
+                    = \quad  \underline{\underline{\frac{-2x}{(x^2+1)^2}}} \\[0.5cm]
+                    f''(x) &= \frac{-2 \cdot (x^2 +1)^2 - (-2x)4x(x^2+1)}{(x^2+1)^4} 
+                    = \frac{-2(x^2+1)^2 - (-8x^2)(x^2+1)}{(x^2+1)^4} \\[0.3cm]
+                    &= \frac{\cancel{(x^2+1)}(-2(x^2+1)-(-8x^2))}{(x^2+1)^3} 
+                    = \frac{-2x^2-2+8x^2}{(x^2+1)^3} 
+                    \quad = \quad  \underline{\underline{\frac{6x^2-2}{(x^2+1)^3}}} \\[0.5cm]
+                    f'''(x) &= \frac{12x(x^2+1)^3 -(6x^2-2)6x(x^2+1)^2}{(x^2+1)^6} 
+                    = \frac{\cancel{(x^2+1)^2}(12x(x^2+1)-(36x^3-12x))}{(x^2+1)^4}\\[0.3cm]
+                    &= \frac{12x^3+12x-(36x^3-12x)}{(x^2+1)^4} \\[0.4cm]
+                    &= \underline{\underline{\frac{-24x^3+24x}{(x^2+1)^4}}} \\
                 \end{align*}
                 Wir setzen $f''(x)$ gleich Null, um die Wendepunkte zu bestimmen:
                 \begin{align*}
@@ -278,8 +280,8 @@
                 Demnach gibt es zwei Wendepunkte, und zwar bei $\frac{1}{\sqrt{3}}$ und $-\frac{1}{\sqrt{3}}$.
                 Zur Probe setzen wir die beiden x-Werte noch in die dritte Ableitung ein, die dann nicht gleich 0 sein darf:
                 \begin{align*}
-                    \frac{-24(\frac{1}{\sqrt{3}}))^3+\frac{24}{\sqrt{3}}}{((\frac{1}{\sqrt{3}})^2+1)^4} = \frac{27 \sqrt{3}}{16}\\
-                    \frac{-24(\frac{-1}{\sqrt{3}}))^3+\frac{-24}{\sqrt{3}}}{((\frac{-1}{\sqrt{3}})^2+1)^4} = -\frac{27 \sqrt{3}}{16}
+                    &\frac{-24(\frac{1}{\sqrt{3}}))^3+\frac{24}{\sqrt{3}}}{((\frac{1}{\sqrt{3}})^2+1)^4} = \frac{27 \sqrt{3}}{16}\\[0.5cm]
+                    &\frac{-24(\frac{-1}{\sqrt{3}}))^3+\frac{-24}{\sqrt{3}}}{((\frac{-1}{\sqrt{3}})^2+1)^4} = -\frac{27 \sqrt{3}}{16}
                 \end{align*}
             \end{enumerate}
 
