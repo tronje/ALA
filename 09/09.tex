@@ -83,61 +83,71 @@
         \todo
         % Aufgabe 3
         \item[\textbf{3.}]
-
-        %\begin{align*}
-        %f(x,y) = -x^2-y^2 +xy +x +6 \\
-        %f_x = -2 +y +1 \\
-        %f_y = -2y + x \\
-        %f_{xx} = 0 \\
-        %f_{yy} = -2 \\
-        %f_{xy} = 1 \\
-        %f_{yx} = -2 \\         
-        %\end{align*}
-        %$$ \begin{pmatrix}
-        %0 & 1\\
-        %-2 & -2
-        %\end{pmatrix} $$
-        %\begin{align*}
-        %f(x,y) = 3x^2 +2y^2 -xy - 4x +y +1 \\
-        %f_x = 6x -y -4 \\
-        %f_y = 4y -x +1 \\
-        %f_{xx} = 6 \\
-        %f_{yy} = 4 \\
-        %f_{xy} = -1 \\
-        %f_{yx} = -1 \\  
-        %\end{align*}
-        %$$\begin{pmatrix}
-        %6 & -1 \\
-        %-1 & 4	
-        %\end{pmatrix} $$
-        %\begin{align*}
-        %f(x,y) = 3x^2+y^2+4xy -x +y +2
-        %f_x = 6x+4y-1 \\
-        %f_y = 2y +4x +1 \\
-        %f_{xx} = 6
-        %f_{yy} = 2
-        %f_{xy} = 4 \\
-        %f_{yx} = 4 \\    
-        %\end{align*}
-        %$$ \begin{pmatrix}
-        %	6 & 4 \\
-        %	4 & 2
-        %\end{pmatrix} $$
-        %\begin{align}
-        %f(x,y) = x^3+4y^3-9x-48y+7
-        %f_x = 3x^2-9
-        %f_y = 12y^2 -48
-        %f_{xx} = 6x
-        %f_{yy} = 12y
-        %f_{xy} = 0
-        %f_{yx} = 0 
-        %\end{align}
-        %$$\begin{pmatrix}
-        %	6x & 0 \\
-        %	0 & 12y
-        %\end{pmatrix}$$
+        \begin{enumerate}
+                \item[(i)]
+        \begin{align*}
+        &f(x,y) = -x^2-y^2 +xy +x +6 \\
+        &f_x = -2x +y +1 \\
+        &f_y = -2y + x \\
+        &f_{xx} = -2 \\
+        &f_{yy} = -2 \\
+        &f_{xy} = 1 \\
+        &f_{yx} = -2 \\         
+        \end{align*}
+        $$ A = \begin{pmatrix}
+        -2 & 1\\
+        -2 & -2
+        \end{pmatrix} $$
+        $$ \text{A ist negativ definit, da } f_{xx} = -2 \text{ und } \Delta = 2. $$
+        \item[(ii)]
+        \begin{align*}
+        &f(x,y) = 3x^2 +2y^2 -xy - 4x +y +1 \\
+        &f_x = 6x -y -4 \\
+        &f_y = 4y -x +1 \\
+        &f_{xx} = 6 \\
+        &f_{yy} = 4 \\
+        &f_{xy} = -1 \\
+        &f_{yx} = -1 \\  
+        \end{align*}
+        $$ B =\begin{pmatrix}
+        6 & -1 \\
+        -1 & 4	
+        \end{pmatrix} $$
+        $$ \text{B ist positiv definit, da } f_{xx} = 6 \text{ und } \Delta = 23 \ (> 0).$$ 
+        \item[(iii)]
+        \begin{align*}
+        &f(x,y) = 3x^2+y^2+4xy -x +y +2
+        &f_x = 6x+4y-1 \\
+        &f_y = 2y +4x +1 \\
+        &f_{xx} = 6 \\
+        &f_{yy} = 2 \\
+        &f_{xy} = 4 \\
+        &f_{yx} = 4 \\    
+        \end{align*}
+        $$ C = \begin{pmatrix}
+        	6 & 4 \\
+        	4 & 2
+        \end{pmatrix} $$
+        $ \text{C ist indefinit, da } f_{xx} = 12 \text{ also positiv ist, aber } \Delta = -4 \ (< 0) $
+        \item[(iv)]
+        \begin{align*}
+        &f(x,y) = x^3+4y^3-9x-48y+7 \\
+        &f_x = 3x^2-9 \\
+        &f_y = 12y^2 -48 \\
+        &f_{xx} = 6x \\
+        &f_{yy} = 12y \\
+        &f_{xy} = 0 \\
+        &f_{yx} = 0 \\
+        \end{align*}
+        \cancel{$$ D = \begin{pmatrix}
+        	6x & 0 \\
+        	0 & 12y
+        \end{pmatrix}$$
+        $ \text{D ist positiv definit, da } f_{xx} = 6 \text{ und } \Delta = 72 \ (> 0)$}
+        \end{enumerate}
         % Aufgabe 4
+
         \item[\textbf{4.}]
-        \todo    
+        
     \end{enumerate}        
 \end{document}
