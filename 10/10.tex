@@ -55,14 +55,25 @@
 	                &f_z = 8z -2y \qquad f_{zz} = 8 \\[0.4cm]
 	                &f_{xy} = 0 \qquad f_{yx} = 0 \\
 	                &f_{xz} = 0 \qquad f_{zx} = 0 \\
-	                &f_{yz} = -2 \qquad f_{zy} = -2 \\ \\
-	                \todo \\
+	                &f_{yz} = -2 \qquad f_{zy} = -2 \\
+					&\bordermatrix{
+					  &  \cr
+					I & 4x -2 \cr
+					II & 2y-2z \cr
+					III & 88z-2y \cr
+					} \\[0.3cm]
+	                &x= \frac{1}{2},\quad y = 0,\quad  z = 0 \\
+	                \end{align*}
+	                Für $f(x,y,z)$ ergibt sich somit $f\left(\frac{1}{2},0,0\right) = \frac{15}{2}$ \\
+	                Damit ist der kritische Punkt bei $\left(\frac{1}{2},0,0,\frac{15}{2}\right)$
+	                \begin{align*}
 	                \text{Hesse Matrix:} \\
 	                &A = \begin{pmatrix}
 	                	 4 & 0 & 0 \\
 	                	 0 & 2 & -2 \\
 	                	 0 & 0 & 8 \\
-	                \end{pmatrix}
+	                \end{pmatrix} \\ \\ 
+	                &4 > 0, \Delta = 64 \qquad \text{A ist somit positiv definit.}
             	\end{align*}
 
             \end{enumerate}
@@ -73,23 +84,28 @@
             			\item[(i)]
             			
             			     $\bold{x^2+2x-35 = 0}$ \\
-            			     $$x_{1|2} = -\frac{2}{2} \pm \sqrt{\left(\frac{2}{2}\right)^2+35}$$ \\
-            			     $$= -1 \pm \sqrt{1+35}$$ \\[0.4cm]
-            			     $$x_1 = 5 \qquad x_2 = -7$$ \\
+            			     \begin{align*}
+            			     x_{1|2} &= -\frac{2}{2} \pm \sqrt{\left(\frac{2}{2}\right)^2+35} \\
+            			     &= -1 \pm \sqrt{1+35} \\[0.4cm]
+            			     &\bold{x_1 = 5 \qquad x_2 = -7} \\
+            			     \end{align*}
             			     
             			     \item[(ii)]
+
+            			     $\bold{x^2+2x+10 = 10}$ \\
             			     \begin{align*}
-            			     x^2+2x+10 = 10 \\
             			     x_{1|2} &= - \frac{2}{2} \pm \sqrt{\left(\frac{2}{2}\right)^2 -10} \\
             			     &= -1 \pm \sqrt{1-10} \\
-            			     x_1 = -1+3i \qquad x_2 = -1 -3i
-            			 	\end{align*}
+            			     &\bold{x_1 = -1+3i \qquad x_2 = -1 -3i}
+            			     \end{align*}
+            			 	
             			 	\item[(iii)] 
+            			 
+            			 $\bold{x^2 -18x + 81 = 0} $\\
             			 \begin{align*}
-            			 x^2 -18x + 81 = 0 \\
             			 x_{1|2} &= - \frac{18}{2} \pm \sqrt{\left(-\frac{18}{2}\right)^2 -81} \\
             			 &= -9 \pm \sqrt{\left(-9\right)^2 -81} \\
-            			 x_1 = 9
+            			 &\bold{x_1 = 9}
             			 \end{align*}
             		\end{enumerate}
             \end{enumerate}
