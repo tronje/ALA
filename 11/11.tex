@@ -1,0 +1,127 @@
+\newcommand{\authorinfotitle}{Jonathan Siems, 6533519, Gruppe 12\\ Jan-Thomas Riemenschneider, 6524390, Gruppe 12 \\ Tronje Krabbe, 6435002, Gruppe 9}
+\newcommand{\authorinfo}{Jonathan Siems, Tronje Krabbe, Jan-Thomas Riemenschneider}
+
+\newcommand{\qed}{\square}
+\newcommand{\limp}{\underset{n \to \infty}{\lim}}
+\newcommand{\limn}{\underset{n \to - \infty}{\lim}}
+\newcommand{\todo}{\textbf{\textcolor{red}{TODO}}}
+\newcommand{\todaynum}{\the\day.\the\month.\the\year}
+\newcommand{\abgabe}{\textbf{\textcolor{red}{ABGABEDATUM}}}
+\newcommand{\titleinfo}{ALA BLATTNR. 11 10.07.2014}
+
+\documentclass[a4paper,11pt]{article}
+\usepackage[a4paper]{geometry}
+\usepackage[german,ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amstext}
+\usepackage{mathtools}
+\usepackage{enumerate}
+\usepackage{breqn}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{scrdate}
+\usepackage[makeroom]{cancel}
+\usetikzlibrary{calc}
+
+\title{\titleinfo}
+\author{\authorinfotitle}
+\date{\today}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\authorinfo}
+\fancyhead[L]{ALA Hausaufgaben}
+\fancyfoot[C]{\thepage}
+
+
+\begin{document}
+\maketitle
+    \begin{enumerate}
+
+            \item[\textbf{1.}]
+
+            \item[\textbf{2.}]
+
+
+            \item[\textbf{3.}]
+                \begin{enumerate}
+                    \item[a)]
+                        \begin{itemize}
+                            \item $f_3(n)$\\
+                            \item $f_2(n)$\\
+                            \item $f_6(n)$\\
+                            \item $f_1(n)$\\
+                            \item $f_4(n)$\\
+                            \item $f_5(n)$\\
+                        \end{itemize}
+                        $f_3$ wächst am langsamsten, da es sich hier um lineares
+                        Wachstum handelt. Danach kommt $f_2$, was ein Polynom ist.
+                        Diese wächt allerdings langsamer als die anderen Polynome,
+                        da es sich um den Sonderfall der Wurzelfunktion handelt.
+                        Als nächstes könnte man denken käme $f_1$, da $f_6$ ja
+                        schneller wachsen sollte, weil es ein Polynom multipliziert
+                        mit einem Logarithmus ist. Diese Annahme ist falsch,
+                        da bei der Landaunotation stets nur auf die mächtigste
+                        Komponente geachtet wird, was in dem Fall $n^2$ wäre, und
+                        dies wächst langsamer als $n^{2.5}$. Zuletzt kommen
+                        die beiden Exponentialfunktionen $f_4$ und $f_5$.
+                        Eigentlich teilen diese beiden sich den Platz für das
+                        schnellste Wachstum, da die Basis von $10$ bzw. $100$
+                        in der Landaunotation keinen Unterschied macht.
+                    \item[b)]
+                        \begin{itemize}
+                            \item $g_3(n)$\\
+                            \item $g_4(n)$\\
+                            \item $g_1(n)$\\
+                            \item $g_5(n)$\\
+                            \item $g_2(n)$\\
+                            \item $g_7(n)$\\
+                            \item $g_6(n)$\\
+                        \end{itemize}
+                        Die Liste beginnt mit den Funktionen, die kein
+                        $n$ im Exponenten haben, da diese immer am langsamsten
+                        wachsen. Dabei wächst $g_4$ schneller als $g_3$, da
+                        es sich hierbei um ein Polynom handelt. Danach kommt
+                        $g_1$, da hier ein $n$ im Exponenten zu finden ist,
+                        der Exponent jedoch relativ langsam wächst, aufgrund
+                        des Logarithmus und der Wurzel. Als nächstes kommt 
+                        $g_5$, was überraschend scheinen kann, da es sowohl
+                        in der Basis als auch im Exponenten ein $n$ hat. Jedoch
+                        wächst der Exponent nur logarithmisch, also langsamer
+                        als die Exponenten der übrigen Funktionen. Deshalb 
+                        wird $g_5$ unter den restlichen Funktionen eingeordnet,
+                        da die Basis nicht ausschlaggebend genug ist.
+                        Es folgen die Funktionen mit Basis 2, die nach 
+                        ihren Exponenten geordnet sind. Die Begründung für diese
+                        Ordnung ist trivial und z.T. bereits in a) geschehen.
+                \end{enumerate}
+
+            \item[\textbf{4.}]
+                \begin{enumerate}
+                    \item[a)]
+                        (i): falsch, da ein Polynom nicht genauso schnell wächst
+                        wie eine Exponentialfunktion.\\
+                        (ii): richtig, da $3^n$ mindestens so schnell wächst wie
+                        $2^n$. Der Beweis ist trivial.\\
+                        (iii): richtig, da der Unterschied in der Basis für 
+                        besonders hohe Werte keinen Unterschied macht.\\
+                        (iv): richtig, denn wegen des Exponenten $\sqrt{n}$
+                        wächst die Funktion auf der linken Seite langsamer.\\
+                        (v): falsch, $\ln(n)$ wächst wesentlich schneller als
+                        $\ln(\sqrt{n})$.\\
+                        (vi): falsch, der Logarithmus wächst wesentlich
+                        schneller als die Wurzel eines Logarithmus.
+                    \item[b)]
+                        $f(n)=n$, $g(n)=n^{1+\sin(n)}$
+                \end{enumerate}
+
+    \end{enumerate}
+
+\end{document}
